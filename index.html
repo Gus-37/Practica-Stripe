@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto</title>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-detail">
+        <h1>Producto Ejemplo</h1>
+        <img src="C:\Users\gutam\OneDrive\Imágenes\mikasa.jpeg" alt="Producto" class="product-image">
+        <p class="product-description">Este es un producto de ejemplo para probar el sistema de pago con Stripe.</p>
+        <p class="product-price">$1000.00</p>
+
+        <!-- Aquí agregamos el botón de compra de Stripe -->
+        <stripe-buy-button
+          buy-button-id="buy_btn_1QQYPHJCuFkMd0Dma9ldTfpJ"
+          publishable-key="pk_test_51QQXbKJCuFkMd0DmfQB4D2Khw7vAGOyeC4T3o5jXJkWjYS7mTrqVq9LZIj7wzGQTtkJhCvPt9JatwshVoPkLHcoW00s8RiEf9J">
+        </stripe-buy-button>
+    </div>
+</body>
+</html>
